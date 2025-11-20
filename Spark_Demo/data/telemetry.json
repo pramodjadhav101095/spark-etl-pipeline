@@ -1,0 +1,7 @@
+[
+  {"stationId": "S1", "timestamp": "2025-11-18 10:00", "energy": 5, "status": "ACTIVE"},
+  {"stationId": "S1", "timestamp": "2025-11-18 10:05", "energy": 3, "status": "ACTIVE"},
+  {"stationId": "S2", "timestamp": "2025-11-18 10:10", "energy": 7, "status": "FAULT"},
+  {"stationId": "S2", "timestamp": "2025-11-18 10:15", "energy": 2, "status": "ACTIVE"},
+  {"stationId": "S3", "timestamp": "2025-11-18 10:20", "energy": 9, "status": "ACTIVE"}
+]
