@@ -12,22 +12,22 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Unit Test') {
             steps {
                 echo 'Running unit tests'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
                 echo 'Packaging application'
-                sh 'mvn package -DskipTests'
-                archiveArtifacts artifacts: 'target/*.jar'
+                bat 'mvn package -DskipTests'
+                archiveArtifacts artifacts: 'target\\*.jar'
             }
         }
     }
