@@ -12,22 +12,28 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application'
-                bat 'mvn clean compile'
+                dir('Spark_Demo') {
+                    bat 'mvn clean compile'
+                }
             }
         }
 
         stage('Unit Test') {
             steps {
                 echo 'Running unit tests'
-                bat 'mvn test'
+                dir('Spark_Demo') {
+                    bat 'mvn test'
+                }
             }
         }
 
         stage('Package') {
             steps {
                 echo 'Packaging application'
-                bat 'mvn package -DskipTests'
-                archiveArtifacts artifacts: 'target\\*.jar'
+                dir('Spark_Demo') {
+                    bat 'mvn package -DskipTests'
+                    archiveArtifacts artifacts: 'target/*.jar'
+                }
             }
         }
     }
