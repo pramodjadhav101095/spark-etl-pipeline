@@ -20,7 +20,6 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                echo 'Running unit tests'
                 dir('Spark_Demo') {
                     bat 'mvn test'
                 }
@@ -29,10 +28,9 @@ pipeline {
 
         stage('Package') {
             steps {
-                echo 'Packaging application'
                 dir('Spark_Demo') {
                     bat 'mvn package -DskipTests'
-                    archiveArtifacts artifacts: 'target/*.jar'
+                    archiveArtifacts artifacts: 'Spark_Demo/target/*.jar'
                 }
             }
         }
