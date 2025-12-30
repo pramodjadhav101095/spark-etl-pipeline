@@ -1,7 +1,17 @@
 [
-  {"stationId": "S1", "timestamp": "2025-11-18 10:00", "energy": 5, "status": "ACTIVE"},
-  {"stationId": "S1", "timestamp": "2025-11-18 10:05", "energy": 3, "status": "ACTIVE"},
-  {"stationId": "S2", "timestamp": "2025-11-18 10:10", "energy": 7, "status": "FAULT"},
-  {"stationId": "S2", "timestamp": "2025-11-18 10:15", "energy": 2, "status": "ACTIVE"},
-  {"stationId": "S3", "timestamp": "2025-11-18 10:20", "energy": 9, "status": "ACTIVE"}
+  {"stationId": "ST001", "timestamp": "2025-11-18 10:00", "energy": 5, "status": "ACTIVE"},
+  {"stationId": "ST001", "timestamp": "2025-11-18 10:05", "energy": 3, "status": "ACTIVE"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 10:10", "energy": 7, "status": "FAULT"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 10:15", "energy": 2, "status": "ACTIVE"},
+  {"stationId": "ST003", "timestamp": "2025-11-18 10:20", "energy": 9, "status": "ACTIVE"},
+  {"stationId": "ST001", "timestamp": "2025-11-18 10:25", "energy": 12.5, "status": "ACTIVE"},
+  {"stationId": "ST001", "timestamp": "2025-11-18 10:30", "energy": 8, "status": "ACTIVE"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 10:35", "energy": 15.0, "status": "ACTIVE"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 10:40", "energy": 4, "status": "FAULT"},
+  {"stationId": "ST003", "timestamp": "2025-11-18 10:45", "energy": 6, "status": "ACTIVE"},
+  {"stationId": "ST001", "timestamp": "2025-11-18 10:50", "energy": 11.0, "status": "ACTIVE"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 10:55", "energy": 17.0, "status": "ACTIVE"},
+  {"stationId": "ST003", "timestamp": "2025-11-18 11:00", "energy": 13.5, "status": "FAULT"},
+  {"stationId": "ST001", "timestamp": "2025-11-18 11:05", "energy": 5.0, "status": "ACTIVE"},
+  {"stationId": "ST002", "timestamp": "2025-11-18 11:10", "energy": 0, "status": "INACTIVE"}
 ]
